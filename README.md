@@ -4,7 +4,7 @@
 
 # UART-I2C Bridge Implementation: I2C Client(Client#2) Implementation using PIC16F15244 Microcoontroller
 
-In this code example, PIC16F15244 MCU acts as I2C client 2 device and processes periodically acquired sensor data and send data to the host device through I2C interface.Compatible PIC16F152xx family of MCUs are:PIC16F15214,PIC16F15223,PIC16F15254,PIC16F15276.
+In this code example, PIC16F15244 MCU acts as I2C client 2 device and processes periodically acquired sensor data and sends data to the host device through I2C interface. Compatible PIC16F152xx family of MCUs are:PIC16F15214,PIC16F15223,PIC16F15254,PIC16F15276.
 
 Refer GitHub code example [UART-I2C Bridge and I2C Host Implementation using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-and-i2c-host-mplab-mcc) and [UART-I2C Bridge Implementation: I2C Client(Client#1) Implementation using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-i2c-client1-mplab-mcc) for more details about the implementation and application.
 
