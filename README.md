@@ -2,7 +2,7 @@
 
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# UART-I2C Bridge Implementation: I2C Client(Client#2) Implementation using PIC16F15244 Microcoontroller
+# UART-I2C Bridge Implementation: I2C Client(Client-2) Implementation using PIC16F15244 Microcoontroller
 
 In this code example, PIC16F15244 MCU acts as I2C client 2 device and processes periodically acquired sensor data and sends data to the host device through I2C interface. Compatible PIC16F152xx family of MCUs are:PIC16F15214,PIC16F15223,PIC16F15254,PIC16F15276.
 
@@ -10,8 +10,8 @@ Refer GitHub code example [UART-I2C Bridge and I2C Host Implementation using PIC
 
 ## Related Documentation
 
-- [PIC16F15244 Product Family Page](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/pic-mcus/pic16f15244)
-- [PIC16F15244 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=pic16f15244&type=&language=&sort=) 
+- [PIC16F152xx Product Family Page](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/pic-mcus/pic16f15244)
+- [PIC16F152xx Family Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=pic16f15244&type=&language=&sort=) 
 - [PIC16F15244 MCU Family Video](https://www.youtube.com/watch?v=nHLv3Th-o-s)
 - [PIC16F15244 MCU Product Page](https://www.microchip.com/en-us/product/PIC16F15244)
 - [Technical Brief - Using the MSSP in I2C Master mode](https://www.microchip.com/wwwappnotes/appnotes.aspx?appnote=en1001796)
@@ -35,11 +35,15 @@ The input commands and clients I2C address information has been displayed on the
 
 ## Software Used
 
-- [MPLAB® X IDE 5.50 or newer](http://www.microchip.com/mplab/mplab-x-ide)
-- [MPLAB® XC8 2.20 or a newer compiler](http://www.microchip.com/mplab/compilers)
-- [MPLAB® Code Configurator (MCC) v5.0.3 or newer](https://www.microchip.com/mplab/mplab-code-configurator)
-- [MPLAB® Code Configurator (MCC) Device Libraries PIC10 / PIC12 / PIC16 / PIC18 MCU](https://www.microchip.com/mplab/mplab-code-configurator)
-- [Microchip PIC16F1xxxx Series Device Support (v1.8.149) or newer](https://packs.download.microchip.com/) 
+- MPLAB® X IDE [6.0.0 or newer](http://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® XC8 [2.36.0 or newer](http://www.microchip.com/mplab/compilers)
+- MPLAB® Code Configurator (MCC) [5.1.1 or newer](https://www.microchip.com/mplab/mplab-code-configurator)
+- Microchip PIC16F1xxxx Series Device Support [1.9.163 or newer](https://packs.download.microchip.com/)
+- MCC Melody Core 2.1.9
+- MSSP MCC Melody Core 6.1.1
+- ADC MCC Melody Core 
+- TMR0 MCC Melody Core 4.0.8
+- UART MCC Melody Core 1.6.0 
 
 ## Hardware Used
 
