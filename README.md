@@ -4,7 +4,7 @@
 
 # UART-I2C Bridge Implementation: I2C Client(Client-2) Implementation using PIC16F15244 Microcoontroller
 
-This code example is one of good use case to demonstrate uart-i2c bridge implementation using PIC16F15244 family microcontrollers. In this code example, PIC16F15244 MCU acts as I2C client 2s device. It periodically collects the data from the sensor, process the  acquired data and keep the data ready to transmit to Host device over I2C interface. When the Host device requests to send the processed sensor data, then client device responds back to host request with the processed data through i2c interface. After receiving the data from the client device, host device displays the data on the terminal window.
+This code example is one of good use case to demonstrate uart-i2c bridge implementation using PIC16F15244 family microcontrollers. In this code example, PIC16F15244 MCU acts as I2C client 2 device. It periodically collects the data from the sensor, process the  acquired data and keep the data ready to transmit to Host device over I2C interface. When the Host device requests to send the processed sensor data, then client device responds back to host request with the processed data through i2c interface. After receiving the data from the client device, host device displays the data on the terminal window.
 
 Refer GitHub code example [UART-I2C Bridge and I2C Host Implementation using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-and-i2c-host-mplab-mcc) and [UART-I2C Bridge Implementation: I2C Client(Client-1) Implementation using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-i2c-client1-mplab-mcc) for more details about the implementation and application.
 
@@ -41,7 +41,7 @@ The input commands and clients I2C address information has been displayed on the
 - Microchip PIC16F1xxxx Series Device Support [1.9.163 or newer](https://packs.download.microchip.com/)
 - MCC Melody Core 2.1.9
 - MSSP MCC Melody Core 6.1.1
-- ADC MCC Melody Core 
+- ADC MCC Melody Core 3.0.6
 - TMR0 MCC Melody Core 4.0.8
 - UART MCC Melody Core 1.6.0 
 
