@@ -22,7 +22,7 @@ Refer GitHub code example [UART-I2C Bridge and I2C Host Implementation using PIC
 
 In this code example, the PIC16F15244 microcontroller communicate with Data Visualizer terminal window application, running on a PC, through USART interface and receive user inputs/commands. Based on the commands received from the user, the PIC16F15244 microcontroller communicates with the I2C client devices and collect the required sensors data and, transmit to PC for displaying it on the terminal window. This way, the PIC16F15244 microcontroller acts as a EUART-I2C bridge to communicate with Data Visualizer terminal window application and acts as a I2C host device to communicate with the I2C client devices.
 
-The code example uses two I2C clients, named as client 1 and client 2 and, they are based on PIC16F15244 microcontroller. Below Figure 1 shows the block diagram view of the application.
+The code example uses two I2C clients, named as client 1 and client 2 and, they are based on PIC16F15244 microcontroller. Figure 1 shows the block diagram view of the application.
 
 <p align="center">
   <img width=auto height=auto src="images/block diagram.png">
