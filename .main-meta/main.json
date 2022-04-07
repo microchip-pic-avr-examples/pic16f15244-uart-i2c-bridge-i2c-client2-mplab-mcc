@@ -7,7 +7,7 @@
         "version": "1.0.0",
         "displayName": "UART-I2C Bridge Implementation: I2C Client(Client-2) Implementation using PIC16F15244 Microcontroller",
         "projectName": "pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc",
-        "shortDescription": "This example demonstrates UART I2C bridge implementation using PIC MCU The PIC16F15244 MCU processes periodically acquired sensor data and also acts as a I2C client Compatible PIC16F152xx family of MCUs are PIC16F15214 PIC16F15223 PIC16F15254 PIC16F15276",
+        "shortDescription": "This example demonstrates UART-I2C bridge implementation using PIC MCU. The PIC16F15244 MCU processes periodically acquired sensor data and also acts as a I2C client. Compatible PIC16F152xx family of MCUs are PIC16F15214, PIC16F15223, PIC16F15254, PIC16F15276.",
         "ide": {
             "name": "MPLAB X",
             "semverRange": ">=6.0.0"
