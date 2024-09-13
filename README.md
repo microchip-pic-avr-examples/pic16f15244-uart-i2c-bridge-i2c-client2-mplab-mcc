@@ -10,10 +10,10 @@ Refer GitHub code example [UART-I2C Bridge and I2C Host Implementation using PIC
 
 ## Related Documentation
 
-- [PIC16F152xx Product Family Page](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/pic-mcus/pic16f15244)
+- [PIC16F152xx Product Family Page](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/pic-mcus/pic16f15244?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08)
 - [PIC16F152xx Family Code Examples on GitHub](https://github.com/orgs/microchip-pic-avr-examples/repositories?q=pic16f152&type=all&language=&sort=) 
 - [PIC16F15244 MCU Family Video](https://www.youtube.com/watch?v=nHLv3Th-o-s)
-- [PIC16F15244 MCU Product Page](https://www.microchip.com/en-us/product/PIC16F15244)
+- [PIC16F15244 MCU Product Page](https://www.microchip.com/wwwproducts/en/PIC16F15244?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08)
 - [Technical Brief - Using the MSSP in I2C Master mode](https://www.microchip.com/wwwappnotes/appnotes.aspx?appnote=en1001796)
 - [Technical Brief – Using the MSSP in I2C Slave mode](https://www.microchip.com/wwwappnotes/appnotes.aspx?appnote=en1001796)
 - [Application Note – AN3538 A Simple Water Monitoring System with I2C Communication](https://ww1.microchip.com/downloads/en/Appnotes/A-Simple-Water-Monitoring-System-with%20I2C-Communication-DS00003538A.pdf)
@@ -29,16 +29,16 @@ The code example uses two I2C clients, named as client 1 and client 2 and, they 
   <br>Figure 1 : Block diagram view of the application<br>
 </p>
 
-For the purpose of demonstration, pH sensor is interfaced to client 1 and, temperature and capacitive soil moisture sensors are interfaced to client 2. Both the clients periodically collect data from the sensors, process the acquired data and keep the data ready to transmit to Host device over I2C interface. 
+For demonstration purposes, the pH sensor is interfaced to Client 1 and, temperature and capacitive soil moisture sensors are interfaced to Client 2. Both clients periodically collect data from the sensors, process the acquired data and keep the data ready to transmit to the Host device over the I2C interface. 
 
-The input commands and clients I2C address information has been displayed on the terminal window of data visualizer. The user needs to enter a client device address from where the sensor data needs to be collected. If the entered client device address is correct, then the next input command, asking the user to enter sensor information from where data needs to be collected, is displayed on the terminal window. After entering the correct sensor information, the host device establishes I2C communication with the respective client device and requests to send the processed sensor data. The client device responds back to host request with the processed sensor data. Upon receiving the sensor data, the host device transmits data to data visualizer tool through UART interface, for displaying it on the terminal window. If the user entered client address or sensor input command is incorrect, then terminal window display the supplied client address or sensor information is incorrect and requests the user to re-enter details.
+On the Data Visualizer terminal window, the user input commands and clients I2C address information is displayed. The user needs to enter a client device address from where the sensor data needs to be collected. If the entered client device address is correct, then the next input command, asking the user to enter sensor information from where data needs to be collected, is displayed on the terminal window. After entering the correct sensor information, the host device establishes the I2C communication with the respective client device and requests to send the processed sensor data. The client device responds back to host request with the processed sensor data. Upon receiving the sensor data, the host device transmits data to the Data Visualizer tool through the UART interface, for displaying it on the terminal window. If the user entered client address or sensor input command is incorrect, then the terminal window displays if the supplied client address or sensor information is incorrect and requests the user to re-enter details.
 
 ## Software Used
 
-- MPLAB® X IDE [6.20 or newer](http://www.microchip.com/mplab/mplab-x-ide)
-- MPLAB® XC8 [2.50 or newer](http://www.microchip.com/mplab/compilers)
-- MPLAB® Code Configurator (MCC) [5.7.1 or newer](https://www.microchip.com/mplab/mplab-code-configurator)
-- Microchip PIC16F1xxxx Series Device Support [1.25.389 or newer](https://packs.download.microchip.com/) 
+- [MPLAB® X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08) 6.20 or newer
+- [MPLAB® XC8 Compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08) 2.50 or newer
+- [MPLAB® Code Configurator (MCC)](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08) 5.7.1 or newer
+- [Microchip PIC16F1xxxx Series Device Support](https://packs.download.microchip.com/) 1.25.389 or newer
 - MSSP MCC Melody Core 7.0.1
 - ADC MCC Melody Core 3.0.10
 - TMR0 MCC Melody Core 4.0.13
@@ -46,8 +46,8 @@ The input commands and clients I2C address information has been displayed on the
 
 ## Hardware Used
 
-- Curiosity Nano Base for Click boards™[AC164162](https://www.microchip.com/en-us/development-tool/AC164162)
-- PIC16F15244 Curiosity Nano Evaluation Kit [EV09Z19A](https://www.microchip.com/en-us/development-tool/EV09Z19A)
+- Curiosity Nano Base for Click boards™[AC164162](https://www.microchip.com/en-us/development-tool/AC164162?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08)
+- PIC16F15244 Curiosity Nano Evaluation Kit [EV09Z19A](https://www.microchip.com/en-us/development-tool/EV09Z19A?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_pic16f15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08)
 - SHT AN Click [MIKROE-3984](https://www.mikroe.com/sht-an-click)
 - PH Sensor [EC-4743](https://www.electronicscomp.com/analog-ph-sensor-kit-for-arduino?gclid=EAIaIQobChMIhfv3t-q58QIVu4NLBR2VKQGWEAYYAyABEgKhdPD_BwE)
 - Capacitive Soil Moisture Sensor V2.0 [EC-5092](https://www.electronicscomp.com/capacitive-soil-moisture-sensor-v2?gclid=EAIaIQobChMI3YCgheq58QIVxZVLBR1PZQKPEAQYAiABEgJW9_D_BwE)
