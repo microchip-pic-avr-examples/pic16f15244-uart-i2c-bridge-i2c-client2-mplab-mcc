@@ -2,11 +2,11 @@
 
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# UART-I2C Bridge Implementation: I2C Client(Client-2) Implementation using PIC16F15244 Microcoontroller
+# UART-I2C Bridge Implementation: I2C Client(Client-2) Implementation Using PIC16F15244 Microcoontroller
 
 This code example is one of good use case to demonstrate uart-i2c bridge implementation using PIC16F152xx family microcontrollers. In this code example, PIC16F15244 MCU acts as I2C client 2 device. It periodically collects the data from the sensor, process the  acquired data and keep the data ready to transmit to Host device over I2C interface. When the Host device requests to send the processed sensor data, then client device responds back to host request with the processed data through i2c interface. After receiving the data from the client device, host device displays the data on the terminal window.
 
-Refer GitHub code example [UART-I2C Bridge and I2C Host Implementation using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-and-i2c-host-mplab-mcc) and [UART-I2C Bridge Implementation: I2C Client(Client-1) Implementation using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-i2c-client1-mplab-mcc) for more details about the implementation and application.
+Refer GitHub code example [UART-I2C Bridge and I2C Host Implementation Using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-and-i2c-host-mplab-mcc) and [UART-I2C Bridge Implementation: I2C Client(Client-1) Implementation Using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-i2c-client1-mplab-mcc) for more details about the implementation and application.
 
 ## Related Documentation
 
@@ -24,7 +24,7 @@ In this code example, the PIC16F15244 microcontroller communicate with Data Visu
 
 The code example uses two I2C clients, named as client 1 and client 2 and, they are based on PIC16F15244 microcontroller. Figure 1 shows the block diagram view of the application.
 
-<p align="center">
+<p align="left">
   <img width=auto height=auto src="images/block diagram.png">
   <br>Figure 1 : Block diagram view of the application<br>
 </p>
