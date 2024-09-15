@@ -2,11 +2,11 @@
 
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# UART-I2C Bridge Implementation: I2C Client(Client-2) Implementation Using PIC16F15244 Microcoontroller
+# UART-I2C Bridge Implementation: I2C Client (Client-2) Implementation Using PIC16F15244 Microcoontroller
 
-This code example is one of good use case to demonstrate uart-i2c bridge implementation using PIC16F152xx family microcontrollers. In this code example, PIC16F15244 MCU acts as I2C client 2 device. It periodically collects the data from the sensor, process the  acquired data and keep the data ready to transmit to Host device over I2C interface. When the Host device requests to send the processed sensor data, then client device responds back to host request with the processed data through i2c interface. After receiving the data from the client device, host device displays the data on the terminal window.
+This code example is a good use case to demonstrate UART-I2C bridge implementation using the PIC16F152XX family of microcontrollers. In this code example, the PIC16F15244 MCU acts as device 2 for the I2C client. It periodically collects the data from the sensor, processes the acquired data and keeps the data ready to transmit to Host device over the I2C interface. When the Host device requests to send the processed sensor data, then client device responds back to host request with the processed data through the I2C interface. After receiving the data from the client device, the host device displays the data on the terminal window.
 
-Refer GitHub code example [UART-I2C Bridge and I2C Host Implementation Using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-and-i2c-host-mplab-mcc) and [UART-I2C Bridge Implementation: I2C Client(Client-1) Implementation Using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-i2c-client1-mplab-mcc) for more details about the implementation and application.
+Refer to the GitHub code example [UART-I2C Bridge and I2C Host Implementation Using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-and-i2c-host-mplab-mcc) and [UART-I2C Bridge Implementation: I2C Client(Client-1) Implementation Using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-i2c-client1-mplab-mcc) for more details about the implementation and application.
 
 ## Related Documentation
 
@@ -20,9 +20,9 @@ Refer GitHub code example [UART-I2C Bridge and I2C Host Implementation Using PIC
 
 ## Description 
 
-In this code example, the PIC16F15244 microcontroller communicate with Data Visualizer terminal window application, running on a PC, through USART interface and receive user inputs/commands. Based on the commands received from the user, the PIC16F15244 microcontroller communicates with the I2C client devices and collect the required sensors data and, transmit to PC for displaying it on the terminal window. This way, the PIC16F15244 microcontroller acts as a EUART-I2C bridge to communicate with Data Visualizer terminal window application and acts as a I2C host device to communicate with the I2C client devices.
+In this code example, the PIC16F15244 microcontroller communicates with the Data Visualizer terminal window application, running on a PC, through the USART interface and receive user inputs/commands. Based on the commands received from the user, the PIC16F15244 microcontroller communicates with the I2C client devices and collects the required sensors data and, transmitting to PC for displaying it on the terminal window. This way, the PIC16F15244 microcontroller acts as a EUART-I2C bridge to communicate with the Data Visualizer terminal window application and acts as a I2C host device to communicate with the I2C client devices.
 
-The code example uses two I2C clients, named as client 1 and client 2 and, they are based on PIC16F15244 microcontroller. Figure 1 shows the block diagram view of the application.
+The code example uses two I2C clients, named Client 1 and Client 2 and, they are based on PIC16F15244 microcontroller. Figure 1 shows the block diagram view of the application.
 
 <p align="left">
   <img width=auto height=auto src="images/block diagram.png">
@@ -31,7 +31,7 @@ The code example uses two I2C clients, named as client 1 and client 2 and, they 
 
 For demonstration purposes, the pH sensor is interfaced to Client 1 and, temperature and capacitive soil moisture sensors are interfaced to Client 2. Both clients periodically collect data from the sensors, process the acquired data and keep the data ready to transmit to the Host device over the I2C interface. 
 
-On the Data Visualizer terminal window, the user input commands and clients I2C address information is displayed. The user needs to enter a client device address from where the sensor data needs to be collected. If the entered client device address is correct, then the next input command, asking the user to enter sensor information from where data needs to be collected, is displayed on the terminal window. After entering the correct sensor information, the host device establishes the I2C communication with the respective client device and requests to send the processed sensor data. The client device responds back to host request with the processed sensor data. Upon receiving the sensor data, the host device transmits data to the Data Visualizer tool through the UART interface, for displaying it on the terminal window. If the user entered client address or sensor input command is incorrect, then the terminal window displays if the supplied client address or sensor information is incorrect and requests the user to re-enter details.
+The input commands and I2C clients address information have been displayed on the terminal window of the data visualizer. The user needs to enter a client device address from where the sensor data needs to be collected. If the entered client device address is correct, then the next input command, asking the user to enter sensor information from where data needs to be collected, is displayed on the terminal window. After entering the correct sensor information, the host device establishes the I2C communication with the respective client device and requests to send the processed sensor data. The client device responds to the host request with the processed sensor data. Upon receiving the sensor data, the host device transmits data to the Data Visualizer tool through the UART interface, for displaying it on the terminal window. If the user entered the client address or if the sensor input command is incorrect, then the terminal window displays if the supplied client address or if the sensor information is incorrect and requests the user to re-enter details.
 
 ## Software Used
 
@@ -54,4 +54,4 @@ On the Data Visualizer terminal window, the user input commands and clients I2C 
 
 ## Demo Operation
 
-To know about the demo operation, refer GitHub code example [UART-I2C Bridge and I2C Host Implementation using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-and-i2c-host-mplab-mcc)
+To know about the demo operation, refer to the GitHub code example [UART-I2C Bridge and I2C Host Implementation using PIC16F15244 Microcontroller](https://github.com/microchip-pic-avr-examples/pic16f15244-uart-i2c-bridge-and-i2c-host-mplab-mcc)
