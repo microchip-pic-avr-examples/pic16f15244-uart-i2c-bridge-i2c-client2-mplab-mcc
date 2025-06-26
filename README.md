@@ -35,14 +35,14 @@ The input commands and I2C clients address information have been displayed on th
 
 ## Software Used
 
-- [MPLAB® X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08) 6.20 or newer
-- [MPLAB® XC8 Compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08) 2.50 or newer
-- [MPLAB® Code Configurator (MCC)](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08) 5.7.1 or newer
-- [Microchip PIC16F1xxxx Series Device Support](https://packs.download.microchip.com/) 1.25.389 or newer
-- MSSP MCC Melody Core 7.0.1
-- ADC MCC Melody Core 3.0.10
-- TMR0 MCC Melody Core 4.0.13
-- UART MCC Melody Core 1.10.0 
+- [MPLAB® X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08) 6.25 or newer
+- [MPLAB® XC8 Compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08) 3.00 or newer
+- [MPLAB® Code Configurator (MCC)](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC16F15244&utm_content=pic16f15244-uart-i2c-bridge-i2c-client2-mplab-mcc-github&utm_bu=MCU08) 5.6.2 or newer
+- [Microchip PIC16F1xxxx Series Device Support](https://packs.download.microchip.com/) 1.27.418 or newer
+- MSSP MCC Melody Core 7.0.3
+- ADC MCC Melody Core 4.0.0
+- TMR0 MCC Melody Core 5.1.0
+- UART MCC Melody Core 1.10.2 
 
 ## Hardware Used
 
